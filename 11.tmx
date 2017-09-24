@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="215" height="15" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" source="block_tileset.tsx"/>
+ <tileset firstgid="29" source="tube_tileset.tsx"/>
+ <tileset firstgid="33" source="background_tileset.tsx"/>
+ <tileset firstgid="47" source="castle_tileset.tsx"/>
+ <tileset firstgid="54" source="flag_tileset.tsx"/>
+ <tileset firstgid="59" source="triggers.tsx"/>
+ <layer name="tiles" width="215" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztlomOgzAMRFnxHXvfF92z+/9/tkbCkuU6iUNMF7HzpJEoTZwJ8ZR2HQAAAHBcfv7agOCR9ER6DqjRWqdlbfiH/5F9oC+Lmrp3pHvSQ6FWbu9cI1enBvg/rAX/PjhbJV9ziawr972E19ya8A//TD+pxL48BAAw0XfIFgDR9B2yBUA0OlfIFgDtWLmam603oa1yTrpYYCw4pE9ce+bNnRtFKldzs/VB2pG+nevfOMcdk1IeTkln4nNuD3rsGlnjGYxY+bD6Uvu3etjb01HkcuXZg87W+K56Fyq9uy5JV6TrKtd5Tzm875BSHuT3pT3kaq2hp1vPYKk95PIh72n/qR5O9TX7b/1/IeeXcqU9WGegs7Wb9CWuGX0GXO/WqGvxQnoVGhKe9PhB3PO+Q+Q4ue6gvvfsgcfqOqWetvzPwfLP1JxBxPP3ovuQ19T3tf9cD+v72r/ujVr/PN+TK+u3QZ+Bzh/n6VNcp87gBDIV8Xy6oDpbEJ4DxGIiarTW2YL+43P4BWytMFk=
+  </data>
+ </layer>
+ <objectgroup name="enemies" width="215" height="15" visible="0">
+  <object gid="60" x="352" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="656" y="208">
+   <properties>
+    <property name="direction" value="1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="832" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="800" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="1296" y="80">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="1328" y="80">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="1872" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="1680" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="turtle"/>
+   </properties>
+  </object>
+  <object gid="60" x="1584" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="2000" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="1568" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="2016" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="1856" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="2800" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+  <object gid="60" x="2816" y="208">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="style" value="normal"/>
+    <property name="type" value="goomba"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff0000" name="triggers" width="215" height="15" visible="0">
+  <properties>
+   <property name="blockers" value="tlrb"/>
+  </properties>
+  <object x="0" y="208" width="1120" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object x="0" y="0" width="2" height="208">
+   <properties>
+    <property name="blockers" value="rx"/>
+   </properties>
+  </object>
+  <object x="464" y="176" width="32" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="624" y="160" width="32" height="48">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="752" y="144" width="32" height="64">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="928" y="144" width="32" height="64">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="1152" y="208" width="240" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="1440" y="208" width="1008" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2512" y="208" width="928" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object x="3200" y="32" width="16" height="176">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2160" y="192" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2176" y="176" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2192" y="160" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2208" y="144" width="16" height="64">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2256" y="144" width="16" height="64">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2272" y="160" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2288" y="176" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2304" y="192" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2384" y="192" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2400" y="176" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2416" y="160" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2432" y="144" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2448" y="144" width="16" height="96">
+   <properties>
+    <property name="blockers" value="trb"/>
+   </properties>
+  </object>
+  <object x="2512" y="160" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2544" y="192" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2528" y="176" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2912" y="192" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2928" y="176" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2944" y="160" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2960" y="144" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2976" y="128" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2992" y="112" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="3008" y="96" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="3024" y="80" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="3040" y="64" width="16" height="16">
+   <properties>
+    <property name="blockers" value="tlb"/>
+   </properties>
+  </object>
+  <object x="3056" y="64" width="16" height="144">
+   <properties>
+    <property name="blockers" value="trb"/>
+   </properties>
+  </object>
+  <object x="2880" y="176" width="32" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2624" y="176" width="32" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object x="2496" y="144" width="16" height="96">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object name="player" gid="59" x="48" y="208"/>
+ </objectgroup>
+ <objectgroup name="changeables" width="215" height="15">
+  <object gid="2" x="368" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="400" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1248" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1520" y="160">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+    <property name="coin" value="4"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object gid="2" x="1616" y="160">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object gid="2" x="1280" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1296" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1408" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1312" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1328" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1344" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1360" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1376" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1392" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1472" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1504" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1488" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1904" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1952" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1968" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="1984" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="2064" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="2112" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="2080" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="2096" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="2704" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="2720" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object gid="2" x="2752" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="272" y="160">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+    <property name="coin" value="1"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="1760" y="160">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+    <property name="coin" value="1"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="1808" y="160">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+    <property name="coin" value="1"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="1760" y="96">
+   <properties>
+    <property name="blockers" value="trlb"/>
+    <property name="status" value="powerup"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="2736" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="coin" value="1"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="368" y="96">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+    <property name="coin" value="1"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="352" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="powerup"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="384" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="coin" value="1"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="1520" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="coin" value="1"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="1264" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="powerup"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="1712" y="160">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+    <property name="coin" value="1"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="2080" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="coin" value="1"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object name="question_block" gid="4" x="2096" y="96">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="coin" value="1"/>
+    <property name="status" value="coin"/>
+   </properties>
+  </object>
+  <object gid="2" x="336" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+  <object name="hidden_1up" gid="8" x="1024" y="144">
+   <properties>
+    <property name="blockers" value="b"/>
+    <property name="status" value="1up"/>
+   </properties>
+  </object>
+  <object gid="2" x="1600" y="160">
+   <properties>
+    <property name="blockers" value="tb"/>
+    <property name="status" value="breakable"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
